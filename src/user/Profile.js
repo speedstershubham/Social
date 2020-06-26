@@ -87,7 +87,7 @@ componentWillReceiveProps(props) {
         const {redirectToSignin,user, posts} = this.state;
         if(redirectToSignin) return <Redirect to="/sigin"/>;
        
-        const photoUrl = user._id ? `http://localhost:8000/user/photo/${user._id}?${new Date().getTime()}` :
+        const photoUrl = user._id ? `https://mern-insta-acc.herokuapp.com/user/photo/${user._id}?${new Date().getTime()}` :
         DefaultProfile;
        
        

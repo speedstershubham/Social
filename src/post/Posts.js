@@ -35,7 +35,7 @@ const posterName = post.postedBy ? post.postedBy.name :  " unKnown";
             <div className="card col-md-4"  key={i}>
             <div className="card-body">
                 <img 
-                src={`${process.env.REACT_APP_API_URL}post/photo/${post._id}`}
+                src={`https://mern-insta-acc.herokuapp.com/post/photo/${post._id}`}
 onError={i => i.target.src = `${DefaultPost}`}
 className="img-thimnail mb-3"
 alt={post.title}

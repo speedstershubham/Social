@@ -1,5 +1,5 @@
 export const read = (userId,token) => {
-    return   fetch(`http://localhost:8000/user/${userId}`,{
+    return   fetch(`https://mern-insta-acc.herokuapp.com/user/${userId}`,{
           method:"GET",
           headers:{
               Accept:"application/json",
@@ -14,7 +14,7 @@ export const read = (userId,token) => {
   };
 
   export const list = (users) => {
-    return   fetch(`http://localhost:8000/user`,{
+    return   fetch(`https://mern-insta-acc.herokuapp.com/user`,{
         method:"GET",
       
      
@@ -26,7 +26,7 @@ export const read = (userId,token) => {
   }
 
   export const remove = (userId,token) => {
-    return   fetch(`http://localhost:8000/user/${userId}`,{
+    return   fetch(`https://mern-insta-acc.herokuapp.com/user/${userId}`,{
           method:"DELETE",
           headers:{
               Accept:"application/json",
@@ -42,7 +42,7 @@ export const read = (userId,token) => {
 
   export const update = (userId,token,user) => {
     console.log("USER DATA UPDATE:", user);
-    return  fetch(`http://localhost:8000/user/${userId}`,{
+    return  fetch(`https://mern-insta-acc.herokuapp.com/user/${userId}`,{
           method:"PUT",
           headers:{
               Accept:"application/json",
@@ -69,7 +69,7 @@ next()
 
   export const follow = (userId, token , followId) => {
   
-    return  fetch(`${process.env.REACT_APP_API_URL}user/follow`,{
+    return  fetch(`https://mern-insta-acc.herokuapp.com/user/follow`,{
           method:"PUT",
           headers:{
               Accept:"application/json",
@@ -86,7 +86,7 @@ next()
 
   export const unfollow = (userId, token , unfollowId) => {
   
-    return  fetch(`${process.env.REACT_APP_API_URL}user/unfollow`,{
+    return  fetch(`https://mern-insta-acc.herokuapp.com/user/unfollow`,{
           method:"PUT",
           headers:{
               Accept:"application/json",
@@ -105,7 +105,7 @@ next()
 
   export const findPeople = (userId, token) => {
   
-    return  fetch(`http://localhost:8000/user/findpeople/${userId}`, {
+    return  fetch(`https://mern-insta-acc.herokuapp.com/user/findpeople/${userId}`, {
           method:"GET",
           headers:{
               Accept:"application/json",

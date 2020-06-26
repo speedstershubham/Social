@@ -113,7 +113,7 @@ if(answer){
                                         <img style={{ borderRadius: "50%" ,border:"1px solid black" }}
                                          className="foat-left mr-2" height="30px" width="30px"
                                         onError={i =>(i.target.src = `${DefaultProfile}`)}   
-                                   src={`${process.env.REACT_APP_API_URL}user/photo/${comment?.postedBy._id}`} alt={comment.postedBy.name} /> 
+                                   src={`https://mern-insta-acc.herokuapp.com/user/photo/${comment?.postedBy._id}`} alt={comment.postedBy.name} /> 
                             
                             </Link>
                                

@@ -56,7 +56,7 @@ renderUsers = users  => (
     <div className="row">
 {users.map((user,i) => (
     <div className="card col-md-4"  key={i}>
-  <img style={{height:"200px",width:"200px"}} className="img-thumbnail" src={`http://localhost:8000/user/photo/${user._id}`}
+  <img style={{height:"200px",width:"200px"}} className="img-thumbnail" src={`https://mern-insta-acc.herokuapp.com/user/photo/${user._id}`}
   onError={i =>(i.target.src = `${DefaultProfile}`)}
   alt={user.name} />
   <div className="card-body">

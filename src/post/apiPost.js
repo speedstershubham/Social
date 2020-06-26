@@ -1,5 +1,5 @@
 export const create = (userId,token,post) => {
-    return  fetch(`http://localhost:8000/post/new/${userId}`,{
+    return  fetch(`https://mern-insta-acc.herokuapp.com/post/new/${userId}`,{
           method:"POST",
           headers:{
               Accept:"application/json",
@@ -14,7 +14,7 @@ export const create = (userId,token,post) => {
   };
 
   export const list = (post) => {
-    return fetch(`http://localhost:8000/`,{
+    return fetch(`https://mern-insta-acc.herokuapp.com/`,{
         method:"GET",
     
     })
@@ -26,7 +26,7 @@ export const create = (userId,token,post) => {
 
   
   export const singlePost = postId => {
-    return fetch(`http://localhost:8000/post/${postId}`,{
+    return fetch(`${process.env.REACT_APP_API_URL}post/${postId}`,{
         method:"GET"
     })
     .then(response => {
@@ -36,7 +36,7 @@ export const create = (userId,token,post) => {
   };
 
   export const listByUser = (userId , token) => {
-    return fetch(`http://localhost:8000/posts/by/${userId}`,{
+    return fetch(`https://mern-insta-acc.herokuapp.com/posts/by/${userId}`,{
         method:"GET",
         headers:{
             Accept:"application/json",
@@ -53,7 +53,7 @@ export const create = (userId,token,post) => {
 
 
   export const remove = (postId,token) => {
-    return   fetch(`http://localhost:8000/post/${postId}`,{
+    return   fetch(`https://mern-insta-acc.herokuapp.com/post/${postId}`,{
           method:"DELETE",
           headers:{
               Accept:"application/json",
@@ -68,7 +68,7 @@ export const create = (userId,token,post) => {
   };
 
   export const update = (postId,token,post) => {
-    return  fetch(`http://localhost:8000/post/${postId}`,{
+    return  fetch(`https://mern-insta-acc.herokuapp.com/post/${postId}`,{
           method:"PUT",
           headers:{
               Accept:"application/json",
@@ -84,7 +84,7 @@ export const create = (userId,token,post) => {
 
 
   export const like = (userId, token, postId) => {
-    return  fetch(`http://localhost:8000/post/like`,{
+    return  fetch(`https://mern-insta-acc.herokuapp.com/post/like`,{
           method:"PUT",
           headers:{
               Accept:"application/json",
@@ -101,7 +101,7 @@ export const create = (userId,token,post) => {
   };
 
    export const unlike = (userId,token,postId) => {
-    return  fetch(`http://localhost:8000/post/unlike`,{
+    return  fetch(`https://mern-insta-acc.herokuapp.com/post/unlike`,{
           method:"PUT",
           headers:{
               Accept:"application/json",
@@ -117,7 +117,7 @@ export const create = (userId,token,post) => {
   };
 
   export const comment = (userId, token, postId, comment) => {
-    return  fetch(`http://localhost:8000/post/comment`,{
+    return  fetch(`https://mern-insta-acc.herokuapp.com/post/comment`,{
           method:"PUT",
           headers:{
               Accept:"application/json",
@@ -135,7 +135,7 @@ export const create = (userId,token,post) => {
   };
 
   export const uncomment = (userId,token,postId,comment) => {
-    return  fetch(`http://localhost:8000/post/uncomment`,{
+    return  fetch(`https://mern-insta-acc.herokuapp.com/post/uncomment`,{
           method:"PUT",
           headers:{
               Accept:"application/json",

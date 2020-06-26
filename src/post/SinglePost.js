@@ -103,7 +103,7 @@ const {like, likes} = this.state;
                          return(
                   
                             <div className="card-body">
-                                <img src={`${process.env.REACT_APP_API_URL}post/photo/${post._id}`}
+                                <img src={`https://mern-insta-acc.herokuapp.com/post/photo/${post._id}`}
                 alt={post.title} 
                 onError={i => i.target.src = `${DefaultPost}`}
                 className="img-thimnail mb-3"

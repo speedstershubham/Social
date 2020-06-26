@@ -137,7 +137,7 @@ class EditPost extends Component {
     </div>
 ): ( "")}
 
-                <img style={{height:"200px",width:"200px"}} className="img-thumbnail" src={`http://localhost:8000/post/photo/${id}`}  onError={i =>(i.target.src = `${DefaultPost}`)} />
+                <img style={{height:"200px",width:"200px"}} className="img-thumbnail" src={`https://mern-insta-acc.herokuapp.com/post/photo/${id}`}  onError={i =>(i.target.src = `${DefaultPost}`)} />
               {this. editPostForm(title, body)}
             </div>
         )

@@ -172,7 +172,7 @@ updateUser(data, () => {
            return <Redirect to={`/user/${id}`} />;
         }
 
-       const photoUrl = id ? `http://localhost:8000/user/photo/${id}?${new Date().getTime()}` :
+       const photoUrl = id ? `https://mern-insta-acc.herokuapp.com/user/photo/${id}?${new Date().getTime()}` :
 DefaultProfile;
         return (
             
