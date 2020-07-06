@@ -11,7 +11,7 @@ else return {color:"#ffffff"};
 
 const Menu = ({history}) => (
     <div>
-        <ul className="nav nav-tabs bg-primary justify-content-end ">
+        <ul className="nav nav-tabs navbar-right bg-primary ">
     <li className="nav-item"> <Link className="nav-link" style={isActive(history,"/")} to="/" > Home</Link></li>
     <li className="nav-item"> <Link className="nav-link" style={isActive(history,"/users")} to="/users" > Friends</Link></li>
   {!isAuthenticated() && (
