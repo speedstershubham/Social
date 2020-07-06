@@ -39,7 +39,7 @@ const posterName = post.postedBy ? post.postedBy.name :  " unKnown";
 onError={i => i.target.src = `${DefaultPost}`}
 className="img-thimnail mb-3"
 alt={post.title}
-style={{ height:'200px',width: "auto"}}
+style={{ height:'200px',width: "200"}}
 />
               <h5 className="card-title">{post.title}</h5>
               <p className="card-text">{post.body.substring(0 ,100)}</p>

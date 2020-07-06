@@ -46,7 +46,7 @@ renderUsers = users  => (
         const {users } = this.state;
         return (
             <div>
-               <h2 className="mt-5 mb-5">Users</h2>
+               <h2 className="mt-5 mb-5">Friends</h2>
    
    {this.renderUsers(users)}
             </div>
